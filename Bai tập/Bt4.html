@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .clock {
+      width: 400px;
+      height: 400px;
+      background-color: rgb(245, 243, 241);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tron {
+      background-color: #e0d7d7;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: relative;
+      border: 10px solid goldenrod;
+    }
+    span {
+      position: absolute;
+      background-color: rgb(232, 44, 191);
+      width: 10px;
+      height: 100px;
+      left: 48%;
+      animation: rotate 1s linear infinite;
+      transform-origin: 50% 100%;
+    }
+
+    @keyframes rotate {
+      0% {
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="clock">
+      <div class="tron">
+        <span class="s1"> </span>
+        <span class="s2"> </span>
+      </div>
+    </div>
+  </body>
+</html>
